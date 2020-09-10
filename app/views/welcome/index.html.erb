@@ -1,4 +1,6 @@
+<% provide(:title, 'Title') %>
 <h1>Welcome</h1>
+<h1><%= yield :title %></h1>
 <%= link_to 'Articles', controller: 'articles' %>
 
 <%= link_to 'New article', new_article_path %>
